@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "fa8f138e-302d-4d21-9bc0-f590bcecb120",
+		"name": "rpizero_rdc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3791908"
+	},
+	"item": [
+		{
+			"name": "on/off",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"on\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "192.168.1.108:8080/api/action",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"108"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"action"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "192.168.1.108:8080/api/status",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"108"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"status"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
